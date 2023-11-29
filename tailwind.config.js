@@ -8,6 +8,9 @@ export default {
         sm: "768px",
         md: "1060px",
       },
+      fontFamily: {
+        notoSans: ["Noto Sans KR", "sans-serif"],
+      },
     },
   },
   plugins: [],
