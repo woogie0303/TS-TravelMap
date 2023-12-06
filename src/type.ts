@@ -9,3 +9,8 @@ export type NavCategory = {
   name: string;
   icon: React.ReactElement;
 };
+
+export type CurrentLocation = {
+  longitude: number;
+  latitude: number;
+};
