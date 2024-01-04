@@ -26,9 +26,9 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="flex w-full items-center justify-between px-8 py-4 font-medium">
+    <nav className="flex h-[12%] w-full items-center justify-between px-8 py-4 font-medium">
       <div>
-        <GlobeAltIcon className="text-primary w-10" />
+        <GlobeAltIcon className="w-10 text-primary" />
       </div>
       {/* 카테고리 Container */}
       <div className="flex justify-between">
@@ -42,7 +42,7 @@ const Navbar = () => {
         ))}
       </div>
       <div>
-        <button className="text-third transition-color duration-500 ease-in-out hover:text-inherit">
+        <button className="transition-color text-third duration-500 ease-in-out hover:text-inherit">
           Login
         </button>
       </div>

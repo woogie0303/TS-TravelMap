@@ -8,7 +8,6 @@ function App() {
   const [location, setLocation] = useState<CurrentLocation>();
 
   const locationSuccess = (position: GeolocationPosition) => {
-    console.log(position);
     const longitude = position.coords.longitude;
     const latitude = position.coords.latitude;
 
@@ -20,20 +19,19 @@ function App() {
   };
 
   useEffect(() => {
-    console.log("first");
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(locationSuccess, locationError);
     }
   }, []);
 
   return (
-    <>
+    <div className="h-screen min-h-[778px]">
       <Navbar />
-      <main className="flex">
+      <main className="h-[88%] sm:flex">
         <TravelContainer location={location} />
         <MapContainer location={location} />
       </main>
-    </>
+    </div>
   );
 }
 

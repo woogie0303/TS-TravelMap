@@ -1,4 +1,3 @@
-import React from "react";
 import Map from "./Map";
 import { CurrentLocation } from "@/type";
 
@@ -15,9 +14,9 @@ type Props = {
 
 const MapContainer = ({ location }: Props) => {
   return (
-    <>
+    <div className=" h-full w-full sm:relative sm:basis-[40%]">
       <Map location={location} />
-    </>
+    </div>
   );
 };
 

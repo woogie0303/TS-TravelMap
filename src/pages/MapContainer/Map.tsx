@@ -20,9 +20,7 @@ const Map = ({ location }: Props) => {
     const map = new window.kakao.maps.Map(divMap.current, options);
   }, [location]);
 
-  return (
-    <div ref={divMap} id="map" style={{ width: "100vw", height: "100vh" }} />
-  );
+  return <div ref={divMap} id="map" className="h-full w-full" />;
 };
 
 export default Map;
